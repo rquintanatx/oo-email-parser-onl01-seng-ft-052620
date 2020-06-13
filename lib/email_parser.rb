@@ -6,7 +6,7 @@ class EmailAddressParser
   end 
   
   def parse 
-    parse_emails = @emails.split.collect #(",")
+    parse_emails = @emails.split.collect {|address| adress.split(",")}
     
   end 
 end 
